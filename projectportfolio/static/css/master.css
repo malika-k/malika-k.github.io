@@ -1,0 +1,96 @@
+body, html {
+  background: #1A113C;
+}
+.wrapper {
+  display: flex;
+  /* edge case: 475px is important breakpoint to responsively
+  resize the website on obscenely small devices*/
+  min-width: 475px;
+}
+
+/* ------------------------- color & text classes -------------------------------------------*/
+
+.bg.salmon-red {
+  background: #F54A5F;
+}
+
+.bg.peach-red {
+  background: #FF7D7D;
+}
+
+.bg.sky-blue {
+  background: #C4E3F5;
+}
+
+.bg.oly-blue {
+  background: #54A2D1;
+}
+
+.bg.space-blue {
+  background: #1A113C;
+}
+
+.htext {
+    font-family: 'Quantico', sans-serif;
+}
+.ptext {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.htext.peach-red, .ptext.peach-red {
+  color: #FF7D7D;
+}
+.htext.sky-blue, .ptext.sky-blue {
+  background: #C4E3F5;
+}
+
+.htext.oly-blue, .ptext.oly-blue {
+  color: #54A2D1;
+}
+.htext.space-blue, .ptext.space-blue {
+  color: #1A113C;
+}
+
+/* ------------------------- my components! -------------------------------------------*/
+
+/* IMPORTANT:
+For Image Pop Effect:
+1. must make parent's position relative
+2. must include .img-pop.holder class inside
+*/
+.img-pop {
+  position: absolute;
+}
+
+.img-pop.front {
+  z-index: 1;
+}
+
+.img-pop.back {
+  width: 100%;
+  height: 100%;
+  /* positions back layer to left and under*/
+  top: 10px;
+  left: -10px;
+  z-index: -1;
+}
+
+.img-pop img {
+  width: 100%;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.box {
+  padding: 30px 30px;
+}
+
+@media only screen and (max-width: 576px) {
+  /* fix weird margins by adding more margin space*/
+  .box {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

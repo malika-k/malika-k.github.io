@@ -1,0 +1,13 @@
+#content {
+  width: 100%; /* take up full wrapper space */
+}
+
+#topbar {
+  height: 30px;
+}
+
+.margin-container {
+  max-width: 800px; /* limit content width */
+  margin: 0px auto; /* center this in parent container */
+  word-wrap: break-word;
+}
