@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block page_content %}
+<div class="interactive-wrapper">
+
+  <div class="interactive-content">
+    <div class="box intro">
+      <div class="row">
+          <div class="col-8">
+              <div class="htext peach-red"><h1>hello world!</h1></div>
+          </div>
+        <div class="col">
+          <div class="img-pop">
+            <!-- front: no styling, necessary for position of box -->
+            <div class="img-pop front">
+              <img src="{% static 'img/Malika.jpg'%}" alt="">
+              <div class="img-pop back bg oly-blue"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <div class="htext peach-red"><h3><b>My name is Malika.</b></h3></div>
+      <div class="ptext-container">
+        <div class="ptext peach-red"><p>
+            I'm a software engineer who's always aiming to think outside of the box!
+        </p></div>
+        <div class="ptext peach-red"><p>
+            I enjoy developing interactive experiences.
+            <br>
+            Explore my skills below!
+        </p></div>
+      </div>
+
+      <div class="row explore">
+        <div class="col-sm explore"> <div class="shown circle bg sky-blue"> <div class="hidden circle"></div></div></div>
+        <div class="col-sm explore"> <div class="shown circle bg peach-red"><div class="hidden circle"></div></div></div>
+        <div class="col-sm explore"> <div class="shown circle bg oly-blue"> <div class="hidden circle"></div></div></div>
+      </div>
+
+
+    </div>
+
+    <div class="box fullstack">
+      <div class="row">
+          <div class="col-8">
+              <div class="htext peach-red"><h1>hello world!</h1></div>
+          </div>
+        <div class="col">
+          <div class="img-pop">
+            <!-- front: no styling, necessary for position of box -->
+            <div class="img-pop front">
+              <img src="{% static 'img/Malika.jpg'%}" alt="">
+              <div class="img-pop back bg oly-blue"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <div class="htext peach-red"><h3><b>My name is Malika.</b></h3></div>
+      <div class="ptext-container">
+        <div class="ptext peach-red"><p>
+            I'm a software engineer who's always aiming to think outside of the box!
+        </p></div>
+        <div class="ptext peach-red"><p>
+            I enjoy developing interactive experiences.
+            <br>
+            Explore my skills below!
+        </p></div>
+      </div>
+
+      <div class="row explore">
+        <div class="col-sm explore"> <div class="shown circle bg sky-blue"> <div class="hidden circle"></div></div></div>
+        <div class="col-sm explore"> <div class="shown circle bg peach-red"><div class="hidden circle"></div></div></div>
+        <div class="col-sm explore"> <div class="shown circle bg oly-blue"> <div class="hidden circle"></div></div></div>
+      </div>
+
+
+    </div>
+
+  </div> <!-- end interactive content -->
+
+  <div class="activities">
+    <div class="htext peach-red">
+      <h3>When I'm not coding... you can find me doing:</h3>
+    </div>
+  </div>
+</div>
+{% endblock %}
