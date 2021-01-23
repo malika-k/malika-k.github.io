@@ -1,2 +1,9 @@
 mk_venv/
 insp/
+blog/
+projects/
+
+
+__pycache__
+settings.py
+db.sqlite3
