@@ -1,3 +1,4 @@
+
 .interactive-wrapper {
   margin-top: 100px;
 }
@@ -36,7 +37,7 @@
 .p-container {
 }
 
-.ptext.peach-red.p {
+.p {
   font-size: 18px;
 }
 
@@ -52,7 +53,20 @@
   margin: 0 auto;
 }
 
+.box.fullstack {
+  cursor: pointer;
+  clip-path: circle( 5% at 18% 78%);
+  opacity: 0%;
+  /* Hover off*/
+  transition: clip-path .5s ease-out, opacity .5s .5s; /* delay opacity transition*/
+}
 
+.box.fullstack:hover { /* must always follow preceding element*/
+  opacity: 100%;
+  clip-path: circle(75%);
+  /*Hover on */
+  transition: clip-path .5s ease-in;
+}
 
 
 @media only screen and (max-width: 768px) {
